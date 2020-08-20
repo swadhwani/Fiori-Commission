@@ -1,0 +1,29 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="commCommission.controller.firstPage" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Label text="Plant" width="100%"/>	
+					<Input width="100%" id="plant" busyIndicatorSize="Small" name="plant" textAlign="Begin" required="true" maxLength="50"/>	
+					<Label text="GTIN" width="100%"/>	
+					<Input width="100%" id="gtin"/>	
+					<Label text="Lot/Batch" width="100%"/>	
+					<Input width="100%" id="lot"/>	
+					<Label text="Printer" width="100%"/>	
+					<Input width="100%" id="printer"/>	
+					<Button text="Print" width="100px" id="print" icon="sap-icon://print" activeIcon="sap-icon://print"/>
+				</content>
+			<footer>
+			    <Bar id="__bar0">
+			        <contentLeft>
+			            <Button text="F2 Clear" width="100px" id="clr" icon="sap-icon://eraser"/>
+			        </contentLeft>
+			    <contentRight>
+			        <Button text="F3 Back" width="100px" id="back" activeIcon="sap-icon://sys-back" icon="sap-icon://sys-back"/>
+			    </contentRight>
+			    </Bar>
+			</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
